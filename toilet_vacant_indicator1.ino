@@ -1,5 +1,7 @@
 /*
   Harry's washroom vacant Projects 
+  
+  @ 1 Ultrasonic Sensor
 
   This sketch reads four(4) ultrasonic
   rangefinder and identified if the person
@@ -27,7 +29,7 @@ int sensor4 = 0;
 float dist = 0;
 int trigger; 
 int echo;
-const int highMax = 250;
+const int highMax = 220; /Adjust the distance to sense
 const int highMin = 1;
 const int TrigDey = 1500;
 
@@ -70,18 +72,19 @@ void loop()
 {
   digitalWrite(LED_BUILTIN, HIGH);
   pixels.begin();
-  //sensor1 = readUltrasonicDistance(3, 2, LEDa1); 
-  sensor1 = readUltrasonicDistance(5, 4, LEDa1);
+/* comment or uncomment based on number of sensors to use */
+  sensor1 = readUltrasonicDistance(3, 2, LEDa1); 
+  //sensor2 = readUltrasonicDistance(5, 4, LEDa2);
   //sensor3 = readUltrasonicDistance(7, 6, LEDa3);
   //sensor4 = readUltrasonicDistance(9, 8, LEDa4);
   Serial.print(sensor1);
   Serial.print("cm , ");
-  Serial.print(sensor2);
-  Serial.print("cm , ");
-  Serial.print(sensor3);
-  Serial.print("cm , ");
-  Serial.print(sensor4);
-  Serial.println("cm , ");
+  //Serial.print(sensor2);
+  //Serial.print("cm , ");
+  //Serial.print(sensor3);
+  //Serial.print("cm , ");
+  //Serial.print(sensor4);
+  //Serial.println("cm , ");
  
   //Outdoor Indicator 
   if(sensor1 > highMax || sensor2 > highMax 
