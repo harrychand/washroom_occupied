@@ -27,10 +27,14 @@ Setup Instruction :
 
 
 single sensor with single indicator 
+
 ![image](https://user-images.githubusercontent.com/12832767/109419024-40c55a00-7a06-11eb-815b-dd4678db128a.png)
 
 single sensor with single indicator 
+
 ![image](https://user-images.githubusercontent.com/12832767/109419043-6ce0db00-7a06-11eb-99af-a3758649ead1.png)
+
+
 
 
 All the best
