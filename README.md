@@ -1,10 +1,10 @@
-# washroom_occupied
+# Arduino washroom_occupied
 washroom occupancy indicator
 
 Washroom Occupancy Indicator is a devices use to indicate if the washroom is occupied and user need to wait outside of the washroom or use another nearby washroom 
 this devices use Arduino Nano as platform to control the Ultrasonic sensor and indicate via NeoPixar Indicator. 
 
-items required :  
+# Items required :  
 1. Arduino Nano 
 2. Arduino Nano shield 
 3. Ultrasonic sensor (Min 1, Max 4)
@@ -14,7 +14,7 @@ items required :
 7. wiring & soldering equitment. 
 
 
-Setup Instruction : 
+# Setup Instruction : 
 1. get ready all the items above 
 2. attach Arduino Nano on Arduino Nano shiled 
 3. Open Arduino IDE and 
@@ -26,11 +26,11 @@ Setup Instruction :
 9. Test and observed the results
 
 
-single sensor with single indicator 
+#Single sensor with single indicator 
 
 ![image](https://user-images.githubusercontent.com/12832767/109419024-40c55a00-7a06-11eb-815b-dd4678db128a.png)
 
-single sensor with single indicator 
+#Single sensor with single indicator 
 
 ![image](https://user-images.githubusercontent.com/12832767/109419043-6ce0db00-7a06-11eb-99af-a3758649ead1.png)
 
