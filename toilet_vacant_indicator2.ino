@@ -29,7 +29,7 @@ int sensor4 = 0;
 float dist = 0;
 int trigger; 
 int echo;
-const int highMax = 200;
+const int highMax = 200; // Adjust the hight of detection
 const int highMin = 1;
 const int TrigDey = 1500;
 
@@ -72,6 +72,7 @@ void loop()
 {
   digitalWrite(LED_BUILTIN, HIGH);
   pixels.begin();
+  /* comment / uncomment based on number of sensors to use */
   sensor1 = readUltrasonicDistance(3, 2, LEDa1); 
   sensor2 = readUltrasonicDistance(5, 4, LEDa2);
   //sensor3 = readUltrasonicDistance(7, 6, LEDa3);
@@ -80,10 +81,10 @@ void loop()
   Serial.print("cm , ");
   Serial.print(sensor2);
   Serial.print("cm , ");
-  Serial.print(sensor3);
-  Serial.print("cm , ");
-  Serial.print(sensor4);
-  Serial.println("cm , ");
+  //Serial.print(sensor3);
+  //Serial.print("cm , ");
+  //Serial.print(sensor4);
+  //Serial.println("cm , ");
  
   //Outdoor Indicator 
   if(sensor1 > highMax || sensor2 > highMax 
